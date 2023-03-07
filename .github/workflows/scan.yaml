@@ -4,7 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       client_repository:
-        description: 'Country to place the repository'
+        description: 'repository'
+        required: true
+      branch:
+        description: 'branch'
         required: true
  
 jobs:
