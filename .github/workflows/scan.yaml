@@ -16,7 +16,7 @@ jobs:
     
     uses: American-Chip/workflow-remote/.github/workflows/graviton-scan-reusable.yaml@main
     with:
-      CLIENT_REPOSITORY: ${{ inputs.client_repository }
-      BRANCH : ${{ inputs.branch }
+      CLIENT_REPOSITORY: ${{ inputs.client_repository }}
+      BRANCH : ${{ inputs.branch }}
 
       
