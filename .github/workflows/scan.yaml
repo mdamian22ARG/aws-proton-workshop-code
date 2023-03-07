@@ -11,7 +11,9 @@ jobs:
 
   Deploy:
     
-    uses: American-Chip/workflows/.github/workflows/graviton-scan.yaml
+    uses: American-Chip/workflows/.github/workflows/graviton-scan-reusable.yaml
     with:
-      client_repository: ${{ inputs.client_repository }
+      CLIENT_REPOSITORY: ${{ inputs.client_repository }
+      BRANCH : ${{ inputs.branch }
+
       
