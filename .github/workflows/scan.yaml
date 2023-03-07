@@ -1,0 +1,17 @@
+name: Call a reusable workflow and use its outputs
+
+on:
+  workflow_dispatch:
+    inputs:
+      client_repository:
+        description: 'Country to place the repository'
+        required: true
+ 
+jobs:
+
+  Deploy:
+    
+    uses: American-Chip/workflows/.github/workflows/graviton-scan.yaml
+    with:
+      client_repository: ${{ inputs.client_repository }
+      
