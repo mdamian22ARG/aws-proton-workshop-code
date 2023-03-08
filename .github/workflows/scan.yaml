@@ -18,5 +18,3 @@ jobs:
     with:
       CLIENT_REPOSITORY: ${{ inputs.client_repository }}
       BRANCH : ${{ inputs.branch }}
-
-      
