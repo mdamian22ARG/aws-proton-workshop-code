@@ -5,10 +5,10 @@ on:
     inputs:
       client_repository:
         description: 'repository'
-        required: true
+      
       branch:
         description: 'branch'
-        required: true
+        
  
 jobs:
 
