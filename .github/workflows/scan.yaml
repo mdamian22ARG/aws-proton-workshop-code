@@ -5,7 +5,6 @@ on:
     inputs:
       client_repository:
         description: 'repository'
-      
       branch:
         description: 'branch'
         
@@ -18,3 +17,5 @@ jobs:
     with:
       CLIENT_REPOSITORY: ${{ inputs.client_repository }}
       BRANCH : ${{ inputs.branch }}
+    secrets:
+      ac_github_token: ${{secrets.Token_WF}}
