@@ -7,6 +7,8 @@ on:
         description: 'repository'
       branch:
         description: 'branch'
+      user_id:
+        descrption: 'user_id'
     secrets:
       Token_WF:
 
@@ -19,5 +21,7 @@ jobs:
     with:
       CLIENT_REPOSITORY: ${{ inputs.client_repository }}
       BRANCH : ${{ inputs.branch }}
+      USER_id : ${{ inputs.user_id }}
+
     secrets:
       ac_github_token: ${{secrets.Token_WF}}
